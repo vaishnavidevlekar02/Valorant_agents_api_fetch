@@ -31,3 +31,80 @@ body {
     text-wrap: balance;
   }
 }
+.text-gradient {
+  background: linear-gradient(90deg, #FF033E, #9e1b32, #FF3800, #FF7F50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.card-hover:hover {
+  transform: scale(1.1);
+  box-shadow: white;
+  border:red;
+ 
+  
+}
+
+
+/* .separator{
+  @apply w-28 h-[2px] bg-red my-5;
+
+} */
+
+/* Home.module.css */
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.flashingText {
+  animation: flash 1s infinite;
+}
+
+.flashingImage {
+  animation: flash 1s forwards;
+}
+
+.flashingImg {
+  animation: flash 1s infinite;
+}
+.text-gradient {
+  background: linear-gradient(to right, #FF512F, #DD2476); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.display-name {
+  font-size: 6rem; 
+  font-weight: 700; 
+  letter-spacing: 0.1em; 
+  line-height: 0.8; 
+  padding: 0.5em 0;
+  transform: skewX(-10deg);
+ 
+}
+@keyframes backInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.backInRight {
+  animation: backInRight 1s ease-out;
+}
+
+/* styles/animations.css */
+
